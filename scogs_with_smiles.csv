@@ -1,0 +1,206 @@
+name,SMILES,PubChem
+ Gum Tragacanth,CC.CC.CC.CC.CC,https://pubchem.ncbi.nlm.nih.gov/compound/54172484
+ Sodium Benzoate,C1=CC=C(C=C1)C(=O)[O-].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/517055
+ Benzoic Acid,C1=CC=C(C=C1)C(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/243
+ Propyl Paraben,CCCOC(=O)C1=CC=C(C=C1)O,https://pubchem.ncbi.nlm.nih.gov/compound/7175
+ Methyl Paraben,COC(=O)C1=CC=C(C=C1)O,https://pubchem.ncbi.nlm.nih.gov/compound/7456
+ Sorbitol,C(C(C(C(C(CO)O)O)O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/5780
+ Mannitol,C(C(C(C(C(CO)O)O)O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/6251
+ Propyl Gallate,CCCOC(=O)C1=CC(=C(C(=C1)O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/4947
+ Sulfur dioxide,O=S=O,https://pubchem.ncbi.nlm.nih.gov/compound/1119
+ Sodium sulfite,[O-]S(=O)[O-].[Na+].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/24437
+ Sodium metabisulfite,[O-]S(=O)S(=O)(=O)[O-].[Na+].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/656671
+ Sodium bisulfite,OS(=O)[O-].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/23665763
+ Potassium metabisulfite,[O-]S(=O)S(=O)(=O)[O-].[K+].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/28019
+ p-Hydroxybenzyl isothiocyanate,C1=CC(=CC=C1CN=C=S)O,https://pubchem.ncbi.nlm.nih.gov/compound/160611
+ Allyl isothiocyanate,C=CCN=C=S,https://pubchem.ncbi.nlm.nih.gov/compound/5971
+ Caramel,CC1CC(C(=O)C1=O)C,https://pubchem.ncbi.nlm.nih.gov/compound/61634
+ Zinc sulfate,[O-]S(=O)(=O)[O-].[Zn+2],https://pubchem.ncbi.nlm.nih.gov/compound/24424
+ Zinc oxide,O=[Zn],https://pubchem.ncbi.nlm.nih.gov/compound/14806
+ Zinc chloride,Cl[Zn]Cl,https://pubchem.ncbi.nlm.nih.gov/compound/5727
+ Zinc carbonate,C(=O)([O-])[O-].[Zn+2],https://pubchem.ncbi.nlm.nih.gov/compound/19005
+ Zinc acetate,CC(=O)[O-].CC(=O)[O-].[Zn+2],https://pubchem.ncbi.nlm.nih.gov/compound/11192
+ Sodium alginate,C1(C(C(OC(C1O)O)C(=O)[O-])O)O.[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/5102882
+ Propylene glycol alginate,CC1C(C(C(OC1C(=O)OCC(C)O)OC2C(C(C(OC2C(=O)O)OC)O)O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/131752735
+ Potassium alginate,C1(C(C(OC(C1O)OC2C(C(C(OC2C(=O)[O-])O)O)O)C(=O)[O-])O)O.[K+].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/91886355
+ Calcium alginate,C1(C(C(OC(C1O)OC2C(C(C(OC2C(=O)O)OC3C(C(C(OC3C(=O)[O-])O)O)O)O)O)C(=O)[O-])O)O.[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/44630049
+ Ammonium alginate,COC1C(C(C(OC1C(=O)O)OC2C(C(C(OC2C(=O)O)OC)O)O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/6850754
+ Sodium Carboxymethyl cellulose,CC(=O)[O-].C(C(C(C(C(C=O)O)O)O)O)O.[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/23706213
+ Methylcellulose,COCC1C(C(C(C(O1)OC2C(OC(C(C2OC)OC)OC)COC)OC)OC)OC,https://pubchem.ncbi.nlm.nih.gov/compound/51063134
+" Cellulose, microcrystalline",COC1C(OC(C(C1O)O)OC2C(OC(C(C2O)O)OC)CO)CO,https://pubchem.ncbi.nlm.nih.gov/compound/14055602
+ Cellulose,C(C1C(C(C(C(O1)OC2C(OC(C(C2O)O)O)CO)O)O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/16211032
+ Sodium sesquicarbonate,C(=O)(O)[O-].C(=O)([O-])[O-].[Na+].[Na+].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/10791
+ Sodium carbonate,C(=O)([O-])[O-].[Na+].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/10340
+ Sodium bicarbonate,C(=O)(O)[O-].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/516892
+ Potassium carbonate,C(=O)([O-])[O-].[K+].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/11430
+ Potassium bicarbonate,C(=O)(O)[O-].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/516893
+ Calcium carbonate,C(=O)([O-])[O-].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/10112
+ Propylene glycol monostearate,CCCCCCCCCCCCCCCCCC(=O)OCC(C)O,https://pubchem.ncbi.nlm.nih.gov/compound/14878
+ Propylene glycol,CC(CO)O,https://pubchem.ncbi.nlm.nih.gov/compound/1030
+ Ammoniated Glycyrrhizin,CC1(C2CCC3(C(C2(CCC1OC4C(C(C(C(O4)C(=O)O)O)O)OC5C(C(C(C(O5)C(=O)O)O)O)O)C)C(=O)C=C6C3(CCC7(C6CC(CC7)(C)C(=O)O)C)C)C)C.N,https://pubchem.ncbi.nlm.nih.gov/compound/62074
+ Glycyrrhiza,CC(C1OCC(O1)CO)I,https://pubchem.ncbi.nlm.nih.gov/compound/21852
+ Caprylic Acid,CCCCCCCC(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/379
+ Stannous Chloride,Cl[Sn]Cl,https://pubchem.ncbi.nlm.nih.gov/compound/24479
+ Sodium tetraphosphate,[O-]P(=O)([O-])OP(=O)([O-])OP(=O)([O-])OP(=O)([O-])[O-].[Na+].[Na+].[Na+].[Na+].[Na+].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/197146
+ Sodium tetrametaphosphate,[O-]P1(=O)OP(=O)(OP(=O)(OP(=O)(O1)[O-])[O-])[O-].[Na+].[Na+].[Na+].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/25951
+" Sodium pyrophosphate, tetrabasic",[O-]P(=O)([O-])OP(=O)([O-])[O-].[Na+].[Na+].[Na+].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/24403
+ Sodium phosphate tribasic,[O-]P(=O)([O-])[O-].[Na+].[Na+].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/24243
+ Sodium phosphate monobasic,OP(=O)(O)[O-].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/23672064
+ Sodium phosphate dibasic,OP(=O)([O-])[O-].[Na+].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/24203
+ Sodium metaphosphate,[O-]P(=O)=O.[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/16133893
+ Sodium hexametaphosphate,[O-]P1(=O)OP(=O)(OP(=O)(OP(=O)(OP(=O)(OP(=O)(O1)[O-])[O-])[O-])[O-])[O-].[Na+].[Na+].[Na+].[Na+].[Na+].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/24968
+ Sodium acid pyrophosphate,OP(=O)([O-])OP(=O)(O)[O-].[Na+].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/24451
+ Potassium pyrophosphate,[O-]P(=O)([O-])OP(=O)([O-])[O-].[K+].[K+].[K+].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/23740
+ Potassium phosphate tribasic,[O-]P(=O)([O-])[O-].[K+].[K+].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/62657
+ Potassium phosphate monobasic,OP(=O)(O)[O-].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/516951
+ Potassium phosphate dibasic,OP(=O)([O-])[O-].[K+].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/24450
+ Phosphoric acid,OP(=O)(O)O,https://pubchem.ncbi.nlm.nih.gov/compound/1004
+ Calcium pyrophosphate,[O-]P(=O)([O-])OP(=O)([O-])[O-].[Ca+2].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/24632
+ Calcium phosphate tribasic,[OH-].[O-]P(=O)([O-])[O-].[O-]P(=O)([O-])[O-].[O-]P(=O)([O-])[O-].[Ca+2].[Ca+2].[Ca+2].[Ca+2].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/14781
+ Calcium phosphate dibasic,OP(=O)([O-])[O-].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/24441
+ Calcium hexametaphosphate,[O-]P1(=O)OP(=O)(OP(=O)(OP(=O)(OP(=O)(OP(=O)(O1)[O-])[O-])[O-])[O-])[O-].[Ca+2].[Ca+2].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/61479
+ Sulfuric Acid,OS(=O)(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/1118
+ Ammonium sulfate,[NH4+].[NH4+].[O-]S(=O)(=O)[O-],https://pubchem.ncbi.nlm.nih.gov/compound/6097028
+ Ammonium hydroxide,[NH4+].[OH-],https://pubchem.ncbi.nlm.nih.gov/compound/14923
+ Ammonium chloride,[NH4+].[Cl-],https://pubchem.ncbi.nlm.nih.gov/compound/25517
+ Ammonium carbonate,C(=O)([O-])[O-].[NH4+].[NH4+],https://pubchem.ncbi.nlm.nih.gov/compound/517111
+ Ammonium bicarbonate,C(=O)(O)[O-].[NH4+],https://pubchem.ncbi.nlm.nih.gov/compound/14013
+ Sodium ferricitropyrophosphate,C(C(=O)[O-])C(CC(=O)[O-])(C(=O)[O-])[O-].OP(=O)([O-])OP(=O)([O-])[O-].[Na+].[Fe+3].[Fe+3],https://pubchem.ncbi.nlm.nih.gov/compound/90465822
+ Sodium ferric EDTA,C(CN(CC(=O)O)CC(=O)[O-])N(CC(=O)O)CC(=O)O.[Na+].[Fe],https://pubchem.ncbi.nlm.nih.gov/compound/91825573
+ Reduced iron,[Fe],https://pubchem.ncbi.nlm.nih.gov/compound/23925
+ Ferrous lactate,CC(C(=O)[O-])O.CC(C(=O)[O-])O.[Fe+2],https://pubchem.ncbi.nlm.nih.gov/compound/22197
+ Ferrous gluconate,C(C(C(C(C(C(=O)[O-])O)O)O)O)O.C(C(C(C(C(C(=O)[O-])O)O)O)O)O.[Fe+2],https://pubchem.ncbi.nlm.nih.gov/compound/23616740
+ Ferrous fumarate,C(=CC(=O)[O-])C(=O)[O-].[Fe+2],https://pubchem.ncbi.nlm.nih.gov/compound/6433164
+ Ferrous citrate,C(C(=O)O)C(CC(=O)[O-])(C(=O)[O-])O.[Fe+2],https://pubchem.ncbi.nlm.nih.gov/compound/11064683
+ Ferrous carbonate,C(=O)([O-])[O-].[Fe+2],https://pubchem.ncbi.nlm.nih.gov/compound/11248
+ Ferrous ascorbate,C(C(C1C(=C(C(=O)O1)[O-])O)O)O.C(C(C1C(=C(C(=O)O1)[O-])O)O)O.[Fe+2],https://pubchem.ncbi.nlm.nih.gov/compound/86763295
+ Ferric sodium pyrophosphate,[O-]P(=O)([O-])OP(=O)([O-])[O-].[Na+].[Fe+3],https://pubchem.ncbi.nlm.nih.gov/compound/24862
+ Ferric pyrophosphate,[O-]P(=O)([O-])OP(=O)([O-])[O-].[O-]P(=O)([O-])OP(=O)([O-])[O-].[O-]P(=O)([O-])OP(=O)([O-])[O-].[Fe+3].[Fe+3].[Fe+3].[Fe+3],https://pubchem.ncbi.nlm.nih.gov/compound/24877
+ Ferric phosphate,[O-]P(=O)([O-])[O-].[Fe+3],https://pubchem.ncbi.nlm.nih.gov/compound/24861
+ Ferric oxide,O=[Fe]O[Fe]=O,https://pubchem.ncbi.nlm.nih.gov/compound/518696
+ Ferric citrate,C(C(=O)[O-])C(CC(=O)[O-])(C(=O)[O-])O.[Fe+3],https://pubchem.ncbi.nlm.nih.gov/compound/61300
+ Ferric ammonium citrate,C(C(=O)O)C(CC(=O)O)(C(=O)O)O.N.[Fe+3],https://pubchem.ncbi.nlm.nih.gov/compound/118984355
+ Electrolytic Iron,[Fe],https://pubchem.ncbi.nlm.nih.gov/compound/23925
+ Tocopherols,CC1=C(C=C2CCC(OC2=C1C)(C)CCCC(C)CCCC(C)CCCC(C)C)O,https://pubchem.ncbi.nlm.nih.gov/compound/14986
+ alpha-Tocopherol acetate,CC1=C(C(=C(C2=C1OC(CC2)(C)CCCC(C)CCCC(C)CCCC(C)C)C)OC(=O)C)C,https://pubchem.ncbi.nlm.nih.gov/compound/86472
+ Potassium iodide,[K+].[I-],https://pubchem.ncbi.nlm.nih.gov/compound/4875
+ Potassium iodate,[O-]I(=O)=O.[K+],https://pubchem.ncbi.nlm.nih.gov/compound/23665710
+ Aconitic Acid,C(C(=CC(=O)O)C(=O)O)C(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/643757
+ Choline Chloride,C[N+](C)(C)CCO.[Cl-],https://pubchem.ncbi.nlm.nih.gov/compound/6209
+ Choline Bitartrate,C[N+](C)(C)CCO.C(C(C(=O)[O-])O)(C(=O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/6900
+" Sodium aluminum phosphate, basic",OP(=O)([O-])[O-].OP(=O)([O-])[O-].[O-]P(=O)([O-])[O-].[O-]P(=O)([O-])[O-].[O-]P(=O)([O-])[O-].[O-]P(=O)([O-])[O-].[Na+].[Na+].[Na+].[Na+].[Na+].[Na+].[Na+].[Na+].[Al+3].[Al+3],https://pubchem.ncbi.nlm.nih.gov/compound/76971050
+" Sodium aluminum phosphate, acidic",O.O.O.O.OP(=O)(O)[O-].OP(=O)(O)[O-].OP(=O)(O)[O-].OP(=O)(O)[O-].OP(=O)(O)[O-].OP(=O)(O)[O-].OP(=O)([O-])[O-].OP(=O)([O-])[O-].[Na+].[Al+3].[Al+3].[Al+3],https://pubchem.ncbi.nlm.nih.gov/compound/72941495
+ Aluminum sulfate,[O-]S(=O)(=O)[O-].[O-]S(=O)(=O)[O-].[O-]S(=O)(=O)[O-].[Al+3].[Al+3],https://pubchem.ncbi.nlm.nih.gov/compound/24850
+ Aluminum sodium sulfate,[O-]S(=O)(=O)[O-].[O-]S(=O)(=O)[O-].[Na+].[Al+3],https://pubchem.ncbi.nlm.nih.gov/compound/24939
+ Aluminum potassium sulfate,[O-]S(=O)(=O)[O-].[O-]S(=O)(=O)[O-].[Al+3].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/24856
+ Aluminum hydroxide,[OH-].[OH-].[OH-].[Al+3],https://pubchem.ncbi.nlm.nih.gov/compound/10176082
+ Aluminum ammonium sulfate,[NH4+].[O-]S(=O)(=O)[O-].[O-]S(=O)(=O)[O-].[Al+3],https://pubchem.ncbi.nlm.nih.gov/compound/3032540
+ Taurocholic acid,CC(CCC(=O)NCCS(=O)(=O)O)C1CCC2C1(C(CC3C2C(CC4C3(CCC(C4)O)C)O)O)C,https://pubchem.ncbi.nlm.nih.gov/compound/6675
+ Glycocholic acid,CC(CCC(=O)NCC(=O)O)C1CCC2C1(C(CC3C2C(CC4C3(CCC(C4)O)C)O)O)C,https://pubchem.ncbi.nlm.nih.gov/compound/10140
+ Desoxycholic acid,CC(CCC(=O)O)C1CCC2C1(C(CC3C2CCC4C3(CCC(C4)O)C)O)C,https://pubchem.ncbi.nlm.nih.gov/compound/222528
+ Cholic acid,CC(CCC(=O)O)C1CCC2C1(C(CC3C2C(CC4C3(CCC(C4)O)C)O)O)C,https://pubchem.ncbi.nlm.nih.gov/compound/221493
+ Calcium phytate,C1(C(C(C(C(C1OP(=O)([O-])[O-])OP(=O)([O-])[O-])OP(=O)([O-])[O-])OP(=O)([O-])[O-])OP(=O)([O-])[O-])OP(=O)([O-])[O-].[Ca+2].[Ca+2].[Ca+2].[Ca+2].[Ca+2].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/24495
+ Calcium gluconate,C(C(C(C(C(C(=O)[O-])O)O)O)O)O.C(C(C(C(C(C(=O)[O-])O)O)O)O)O.[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/9290
+ Calcium chloride,[Cl-].[Cl-].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/5284359
+ Calcium acetate,CC(=O)[O-].CC(=O)[O-].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/6116
+ Invert Sugar,C(C(C(C(C(C=O)O)O)O)O)O.C(C(C(C(C(=O)CO)O)O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/21924868
+ Inositol,C1(C(C(C(C(C1O)O)O)O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/892
+ Sodium thiosulfate,[O-]S(=O)(=S)[O-].[Na+].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/24477
+ Succinic acid,C(CC(=O)O)C(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/1110
+ Calcium stearate,CCCCCCCCCCCCCCCCCC(=O)[O-].CCCCCCCCCCCCCCCCCC(=O)[O-].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/15324
+ L-Malic acid,C(C(C(=O)O)O)C(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/222656
+ Malic acid,C(C(C(=O)O)O)C(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/525
+ Sorbic acid,CC=CC=CC(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/643460
+ Sodium sorbate,CC=CC=CC(=O)[O-].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/23665582
+ Potassium sorbate,CC=CC=CC(=O)[O-].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/23676745
+ Calcium sorbate,CC=CC=CC(=O)[O-].CC=CC=CC(=O)[O-].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/6433506
+ Sodium L-ascorbate,C(C(C1C(=C(C(=O)O1)O)[O-])O)O.[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/23667548
+ Calcium L-ascorbate,C(C(C1C(=C(C(=O)O1)[O-])O)O)O.C(C(C1C(=C(C(=O)O1)[O-])O)O)O.[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/54740489
+ L-Ascorbic acid,C(C(C1C(=C(C(=O)O1)O)O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/54670067
+ Magnesium sulfate,[O-]S(=O)(=O)[O-].[Mg+2],https://pubchem.ncbi.nlm.nih.gov/compound/24083
+ Magnesium stearate,CCCCCCCCCCCCCCCCCC(=O)[O-].CCCCCCCCCCCCCCCCCC(=O)[O-].[Mg+2],https://pubchem.ncbi.nlm.nih.gov/compound/11177
+" Magnesium phosphate, tribasic",O.O.O.O.O.[O-]P(=O)([O-])[O-].[O-]P(=O)([O-])[O-].[Mg+2].[Mg+2].[Mg+2],https://pubchem.ncbi.nlm.nih.gov/compound/23724945
+" Magnesium phosphate, dibasic",OP(=O)([O-])[O-].[Mg+2],https://pubchem.ncbi.nlm.nih.gov/compound/123955
+ Magnesium oxide,O=[Mg],https://pubchem.ncbi.nlm.nih.gov/compound/14792
+ Magnesium hydroxide,[OH-].[OH-].[Mg+2],https://pubchem.ncbi.nlm.nih.gov/compound/73981
+ Magnesium chloride,[Mg+2].[Cl-].[Cl-],https://pubchem.ncbi.nlm.nih.gov/compound/5360315
+ Magnesium carbonate,C(=O)([O-])[O-].[Mg+2],https://pubchem.ncbi.nlm.nih.gov/compound/11029
+ Tricalcium silicate,[O-][Si]([O-])([O-])[O-].O=[Ca].[Ca+2].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/25523
+ Sodium silicate,[O-][Si](=O)[O-].[Na+].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/23266
+ Sodium calcium aluminosilicate,[O-][Si]([O-])([O-])[O-].[Na+].[Al+3].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/44144394
+ Sodium aluminosilicate,[O-][Si](=O)[O-].[O-][Si](=O)[O-].[Na+].[Al+3],https://pubchem.ncbi.nlm.nih.gov/compound/19758701
+ Silica aerogel,O=[Si]=O,https://pubchem.ncbi.nlm.nih.gov/compound/24261
+ Potassium silicate,[O-][Si](=O)O[Si](=O)[O-].[K+].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/15778988
+ Magnesium silicate,[O-2].[O-2].[O-2].[Mg+2].[Si+4],https://pubchem.ncbi.nlm.nih.gov/compound/72941442
+ Calcium silicate,[O-][Si]([O-])([O-])[O-].[Ca+2].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/14941
+ Aluminum calcium silicate,[O-][Si](=O)[O-].[O-][Si](=O)[O-].[O-][Si](=O)[O-].[O-][Si](=O)[O-].[O-][Si](=O)[O-].[Al+3].[Al+3].[Ca+2].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/21881395
+ Linoleic acid,CCCCCC=CCC=CCCCCCCCC(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/5280450
+ Manganous sulfate,[O-]S(=O)(=O)[O-].[Mn+2],https://pubchem.ncbi.nlm.nih.gov/compound/24580
+ Manganous oxide,O=[Mn],https://pubchem.ncbi.nlm.nih.gov/compound/14940
+ Manganous chloride,O.O.O.O.Cl[Mn]Cl,https://pubchem.ncbi.nlm.nih.gov/compound/643989
+ Sucrose,C(C1C(C(C(C(O1)OC2(C(C(C(O2)CO)O)O)CO)O)O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/5988
+ Ethyl formate,CCOC=O,https://pubchem.ncbi.nlm.nih.gov/compound/8025
+ Calcium hydroxide,[OH-].[OH-].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/6093208
+ Sodium hypophosphite,[O-]P=O.[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/23675242
+ Potassium hypophosphite,[O-][PH+]=O.[K+],https://pubchem.ncbi.nlm.nih.gov/compound/23714733
+ Manganous hypophosphite,OP=O.OP=O.[Mn+2],https://pubchem.ncbi.nlm.nih.gov/compound/118984371
+ Calcium hypophosphite,OP=O.OP=O.[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/15806572
+ Potassium glycerophosphate,C(C(COP(=O)([O-])[O-])O)O.[K+].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/80278
+ Manganese glycerophosphate,C(C(COP(=O)([O-])[O-])O)O.[Mn+2],https://pubchem.ncbi.nlm.nih.gov/compound/11579475
+ Calcium glycerophosphate,C(C(COP(=O)([O-])[O-])O)O.[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/120096
+ Sodium gluconate,C(C(C(C(C(C(=O)[O-])O)O)O)O)O.[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/23672301
+ Potassium gluconate,C(C(C(C(C(C(=O)[O-])O)O)O)O)O.[K+],https://pubchem.ncbi.nlm.nih.gov/compound/16760467
+ Magnesium gluconate,C(C(C(C(C(C(=O)[O-])O)O)O)O)O.C(C(C(C(C(C(=O)[O-])O)O)O)O)O.[Mg+2],https://pubchem.ncbi.nlm.nih.gov/compound/11418570
+ Thiodipropionic acid,C(CSCCC(=O)O)C(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/8096
+ Sodium propionate,CCC(=O)[O-].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/2723816
+ Propionic acid,CCC(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/1032
+ Dilauryl thiodipropionate,CCCCCCCCCCCCOC(=O)CCSCCC(=O)OCCCCCCCCCCCC,https://pubchem.ncbi.nlm.nih.gov/compound/31250
+ Calcium propionate,CCC(=O)[O-].CCC(=O)[O-].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/19999
+ Adipic acid,C(CCC(=O)O)CC(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/196
+ Sodium diacetate,CC(=O)O.CC(=O)[O-].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/23662384
+ Sodium acetate,CC(=O)[O-].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/517045
+ Acetic acid,CC(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/176
+ Dextran,C(C1C(C(C(C(O1)OCC2C(C(C(C(O2)OCC(C(C(C(C=O)O)O)O)O)O)O)O)O)O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/4125253
+ Triethyl citrate,CCOC(=O)CC(CC(=O)OCC)(C(=O)OCC)O,https://pubchem.ncbi.nlm.nih.gov/compound/6506
+ Stearyl citrate,CCCCCCCCCCCCCCCCCCOC(=O)CC(CC(=O)O)(C(=O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/11612014
+ Sodium citrate,C(C(=O)[O-])C(CC(=O)[O-])(C(=O)[O-])O.[Na+].[Na+].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/6224
+ Potassium citrate,C(C(=O)[O-])C(CC(=O)[O-])(C(=O)[O-])O.[K+].[K+].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/13344
+ Isopropyl citrate,CC(C)O.CC(=O)CC(CC(=O)O)(C(=O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/61986
+ Citric acid,C(C(=O)O)C(CC(=O)O)(C(=O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/311
+ Calcium citrate,C(C(=O)[O-])C(CC(=O)[O-])(C(=O)[O-])O.C(C(=O)[O-])C(CC(=O)[O-])(C(=O)[O-])O.[Ca+2].[Ca+2].[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/13136
+ Ammonium citrate,C(C(=O)O)C(CC(=O)O)(C(=O)O)O.N,https://pubchem.ncbi.nlm.nih.gov/compound/6435836
+ Sodium hydroxide,[OH-].[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/14798
+ Potassium hydroxide,[OH-].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/14797
+ Diacetyl,CC(=O)C(=O)C,https://pubchem.ncbi.nlm.nih.gov/compound/650
+ Vitamin D3 (cholecalciferol),CC(C)CCCC(C)C1CCC2C1(CCCC2=CC=C3CC(CCC3=C)O)C,https://pubchem.ncbi.nlm.nih.gov/compound/5280795
+ Vitamin D2 (ergocalciferol),CC(C)C(C)C=CC(C)C1CCC2C1(CCCC2=CC=C3CC(CCC3=C)O)C,https://pubchem.ncbi.nlm.nih.gov/compound/5280793
+ Sodium caseinate,C(CS(=O)(=O)O)S,https://pubchem.ncbi.nlm.nih.gov/compound/598
+ Casein,CC(C)CC(C(=NC(CCC(=N)O)C(=NC(CC(=O)O)C(=NC(CCCCN)C(=O)O)O)O)O)N=C(C(CCC(=O)O)N=C(C(CC(=O)O)N=C(C(CCC(=O)O)N=C(C(C(C)O)N=C(C(CCC(=N)O)N=C(C(CCC(=N)O)N=C(C(CCC(=N)O)N=C(C(CCC(=O)O)N=C(C(CCC(=O)O)N=C(C(COP(=O)(O)O)N=C(C(CCC(=N)O)N=C(C(CC1=CC=CC=C1)N)O)O)O)O)O)O)O)O)O)O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/73995022
+ Calcium caseinate,[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y].[Y],https://pubchem.ncbi.nlm.nih.gov/compound/161712915
+ Cuprous iodide,[Cu+].[I-],https://pubchem.ncbi.nlm.nih.gov/compound/6432705
+ Hydrochloric acid,Cl,https://pubchem.ncbi.nlm.nih.gov/compound/313
+ Pyridoxine hydrochloride,CC1=NC=C(C(=C1O)CO)CO.Cl,https://pubchem.ncbi.nlm.nih.gov/compound/6019
+ Pyridoxine,CC1=NC=C(C(=C1O)CO)CO,https://pubchem.ncbi.nlm.nih.gov/compound/1054
+ Soy protein isolate,C1=CC=C(C=C1)C(C#N)C2=CC=CC=N2,https://pubchem.ncbi.nlm.nih.gov/compound/95510
+ Sodium chloride,[Na+].[Cl-],https://pubchem.ncbi.nlm.nih.gov/compound/5234
+ Potassium chloride,[Cl-].[K+],https://pubchem.ncbi.nlm.nih.gov/compound/4873
+ Urea,C(=O)(N)N,https://pubchem.ncbi.nlm.nih.gov/compound/1176
+ Lecithin,CCCCCCCCCCCCCCCC(=O)OCC(COP(=O)([O-])OCC[N+](C)(C)C)OC(=O)CCCCCCCC=CCC=CCCCCC,https://pubchem.ncbi.nlm.nih.gov/compound/16213884
+ L(+)-tartaric acid,C(C(C(=O)O)O)(C(=O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/444305
+ Niacin (nicotinic acid),C1=CC(=CN=C1)C(=O)O,https://pubchem.ncbi.nlm.nih.gov/compound/938
+ Hydrogen peroxide,OO,https://pubchem.ncbi.nlm.nih.gov/compound/784
+ Riboflavin-5'-phosphate,CC1=CC2=C(C=C1C)N(C3=C(N2)C(=O)NC(=O)N3)CC(C(C(COP(=O)(O)O)O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/445395
+ Riboflavin,CC1=CC2=C(C=C1C)N(C3=NC(=O)NC(=O)C3=N2)CC(C(C(CO)O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/493570
+ D(-)-Lactic acid,CC(C(=O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/61503
+ Lactic acid,CC(C(=O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/612
+ L(+)-lactic acid,CC(C(=O)O)O,https://pubchem.ncbi.nlm.nih.gov/compound/107689
+ Calcium Lactate,CC(C(=O)[O-])O.CC(C(=O)[O-])O.[Ca+2],https://pubchem.ncbi.nlm.nih.gov/compound/13144
+ Carbon dioxide,C(=O)=O,https://pubchem.ncbi.nlm.nih.gov/compound/280
+ Vitamin A palmitate,CCCCCCCCCCCCCCCC(=O)OCC=C(C)C=CC=C(C)C=CC1=C(CCCC1(C)C)C,https://pubchem.ncbi.nlm.nih.gov/compound/5280531
+ Vitamin A acetate,CC1=C(C(CCC1)(C)C)C=CC(=CC=CC(=CCOC(=O)C)C)C,https://pubchem.ncbi.nlm.nih.gov/compound/638034
+ Vitamin A,CC1=C(C(CCC1)(C)C)C=CC(=CC=CC(=CCO)C)C,https://pubchem.ncbi.nlm.nih.gov/compound/445354
+ Monosodium L-glutamate,C(CC(=O)O)C(C(=O)[O-])N.[Na+],https://pubchem.ncbi.nlm.nih.gov/compound/23672308
+ Monopotassium L-glutamate,C(CC(=O)[O-])C(C(=O)O)N.O.[K+],https://pubchem.ncbi.nlm.nih.gov/compound/23695977
+ Monoammonium L-glutamate,C(CC(=O)O)C(C(=O)O)N.N,https://pubchem.ncbi.nlm.nih.gov/compound/24802175
+ L-Glutamic acid hydrochloride,C(CC(=O)O)C(C(=O)O)N.Cl,https://pubchem.ncbi.nlm.nih.gov/compound/2723891
+ L-Glutamic acid,C(CC(=O)O)C(C(=O)O)N,https://pubchem.ncbi.nlm.nih.gov/compound/33032

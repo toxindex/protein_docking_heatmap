@@ -1,0 +1,32 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Build/output
+*.log
+*.out
+*.aux
+*.pdf
+build/
+dist/
+
+# Virtual env
+venv/
+ENV/
+.env
+
+# Editor settings
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+docking_results/
