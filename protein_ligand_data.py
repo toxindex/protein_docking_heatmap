@@ -1,8 +1,15 @@
 import pandas as pd
+import hashlib
 
 def make_valid_fname(uniprot_id, ligand):
     valid_ligand = ligand.replace('/', '_')
     fname = f"{uniprot_id}_{valid_ligand}.json"
+    if len(fname) > 255:
+        # hash the ligand to make it shorter
+        hash_object = hashlib.sha256(valid_ligand.encode())
+        hash_ligand = hash_object.hexdigest()
+        # create a new filename with the hash
+        fname = f"{uniprot_id}_{hash_ligand}.json"
     
     return fname
 
@@ -20,26 +27,26 @@ def get_thyroid_ligands():
 def get_autism_proteins():
     data = {
         "name": [
-            "aryl-hydrocarbon receptor",
-            "paraoxonase-1",
-            "glutathione s-transferase mu 1",
-            "cytochrome p450 1a2",
-            "sh3- and ankyrin-repeat protein 3",
-            "contactin-associated protein-like 2",
-            "chromodomain-helicase-dna-binding protein 8",
-            "voltage-gated na⁺ channel α-subunit 2",
-            "neurexin-1",
-            "serotonin transporter",
-            "oxytocin receptor",
-            "reelin",
-            "gaba-a receptor β3 subunit",
-            "dopamine d2 receptor",
-            "phosphatase and tensin homolog",
-            "tuberin",
-            "mtor serine/threonine kinase",
-            "methyl-cpg-binding protein 2",
-            "fragile-x messenger ribonucleoprotein",
-            "brain-derived neurotrophic factor",
+            "Aryl-hydrocarbon receptor",
+            "Paraoxonase-1",
+            "Glutathione S-transferase Mu 1",
+            "Cytochrome P450 1A2",
+            "SH3- and ankyrin-repeat protein 3",
+            "Contactin-associated protein-like 2",
+            "Chromodomain-helicase-DNA-binding protein 8",
+            "Voltage-gated Na⁺ channel α-subunit 2",
+            "Neurexin-1",
+            "Serotonin transporter",
+            "Oxytocin receptor",
+            "Reelin",
+            "GABA-A receptor β3 subunit",
+            "Dopamine D2 receptor",
+            "Phosphatase and tensin homolog",
+            "Tuberin",
+            "mTOR serine/threonine kinase",
+            "Methyl-CpG-binding protein 2",
+            "Fragile-X messenger ribonucleoprotein",
+            "Brain-derived neurotrophic factor",
         ],
         "gene_symbol": [
             "AHR",
@@ -87,6 +94,12 @@ def get_autism_proteins():
         ]
     }
     proteins = pd.DataFrame(data)
+
+    # remove entries not in database
+    uniprot_to_remove = ["Q15165", "Q9BYB0", "Q9UHC6", "Q9ULB1", "P30559", "P49815"]
+    proteins = proteins[~proteins["uniprot_id"].isin(uniprot_to_remove)]
+    proteins.reset_index(drop=True, inplace=True)  # Reset indices
+
     return proteins
 
 '''
