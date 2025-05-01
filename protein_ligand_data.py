@@ -6,7 +6,7 @@ def make_valid_fname(uniprot_id, ligand):
     fname = f"{uniprot_id}_{valid_ligand}.json"
     if len(fname) > 255:
         # hash the ligand to make it shorter
-        hash_object = hashlib.sha256(valid_ligand.encode())
+        hash_object = hashlib.sha256(ligand.encode())
         hash_ligand = hash_object.hexdigest()
         # create a new filename with the hash
         fname = f"{uniprot_id}_{hash_ligand}.json"
