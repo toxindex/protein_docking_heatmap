@@ -14,10 +14,88 @@ def make_valid_fname(uniprot_id, ligand):
     return fname
 
 def get_thyroid_proteins():
-    return [""]
+    data = {
+            "name": [
+                "Thyroid hormone receptor alpha",
+                "Thyroid hormone receptor beta",
+                "Retinoid X receptor α",
+                "Peroxisome proliferator‑activated receptor α",
+                "Thyroperoxidase",
+                "Sodium‑iodide symporter",
+                "Thyroglobulin",
+                "Thyroid stimulating hormone receptor",
+                "Type I deiodinase",
+                "Type II deiodinase",
+                "Type III deiodinase",
+                "UDP‑glucuronosyltransferase 1A1",
+                "Sulfotransferase 1A1",
+                "Thyroxine‑binding globulin",
+                "Transthyretin",
+                "Albumin",
+                "Monocarboxylate transporter 8",
+                "Monocarboxylate transporter 10",
+                "Nuclear receptor corepressor 1",
+                "Steroid receptor coactivator 1"
+            ],
+            "gene_symbol": [
+                "THRA",
+                "THRB",
+                "RXRA",
+                "PPARA",
+                "TPO",
+                "SLC5A5",
+                "TG",
+                "TSHR",
+                "DIO1",
+                "DIO2",
+                "DIO3",
+                "UGT1A1",
+                "SULT1A1",
+                "SERPINA7",
+                "TTR",
+                "ALB",
+                "SLC16A2",
+                "SLC16A10",
+                "NCOR1",
+                "NCOA1"
+            ],
+            "uniprot_id": [
+                "P10827",
+                "P10828",
+                "P19793",
+                "Q07869",
+                "P07202",
+                "Q92911",
+                "P01266",
+                "P16473",
+                "P49895",
+                "Q92813",
+                "P55073",
+                "P22309",
+                "P50225",
+                "P05543",
+                "P02766",
+                "P02768",
+                "P36021",
+                "Q8TF71",
+                "O75376",
+                "Q15788"
+            ]
+    }
+
+    proteins = pd.DataFrame(data)
+
+    # remove entries not in database
+    uniprot_to_remove = ["P07202", "Q92911", "P01266", "P49895", "Q92813", "P55073", "P22309", "P36021", "Q8TF71"]
+    proteins = proteins[~proteins["uniprot_id"].isin(uniprot_to_remove)]
+    proteins.reset_index(drop=True, inplace=True)  # Reset indices
+
+    return proteins
+
     
 def get_thyroid_ligands():
-    return [""]
+    ligands = pd.read_pickle("./scogs_with_smiles.pkl")
+    return ligands
     
 '''
     Below is a working short-list of 20 proteins that toxicologists most often
@@ -91,7 +169,7 @@ def get_autism_proteins():
             "P51608",
             "Q06787",
             "P23560",
-        ]
+        ],
     }
     proteins = pd.DataFrame(data)
 
