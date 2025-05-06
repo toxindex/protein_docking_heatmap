@@ -51,7 +51,7 @@ async def receive_docking_result(request: Request):
                 print(f"Retry submission failed: {e}")
 
             return {"message": f"Retried docking for {uniprot_id} + {ligand} (retry {retry_count + 1})"}
-        elif error_type == "inference_error" and ("CUDA out of memory" in payload.get("traceback", "")):
+        elif error_type == "inference_error" and ("CUDA out of memory" in payload.get("stderr", "")):
             if retry_count < MAX_RETRIES:
                 try:
                     await httpx.AsyncClient().post(
