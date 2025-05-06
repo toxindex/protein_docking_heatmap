@@ -26,23 +26,41 @@ async def receive_docking_result(request: Request):
     retry_count = payload.get("retry_count", 0)
 
     # If docking failed due to no pose and retry count is less than max retries, resubmit the job
-    if status == "failed" and error_type == "no_pose_generated" and retry_count < MAX_RETRIES:
-        print(f"Retrying docking for {uniprot_id} + {ligand} (retry {retry_count + 1})")
-        try:
-            callback_url = os.getenv("WEBHOOK", "http://your.host") + "/webhook"
-            await httpx.AsyncClient().post(
-                "https://diffdock.toxindex.com/start_docking_uniprot",
-                json = {
-                    "uniprot_id": uniprot_id,
-                    "ligand": ligand,
-                    "callback_url": callback_url,
-                    "retry_count": retry_count + 1
-                }
-            )
-        except Exception as e:
-            print(f"Retry submission failed: {e}")
+    if status == "failed":
+        callback_url = os.getenv("WEBHOOK", "http://your.host") + "/webhook"
+        if error_type == "no_pose_generated" and retry_count < MAX_RETRIES:
+            print(f"Retrying docking for {uniprot_id} + {ligand} (retry {retry_count + 1})")
+            try:
+                await httpx.AsyncClient().post(
+                    "https://diffdock.toxindex.com/start_docking_uniprot",
+                    json = {
+                        "uniprot_id": uniprot_id,
+                        "ligand": ligand,
+                        "callback_url": callback_url,
+                        "retry_count": retry_count + 1
+                    }
+                )
+            except Exception as e:
+                print(f"Retry submission failed: {e}")
 
-        return {"message": f"Retried docking for {uniprot_id} + {ligand} (retry {retry_count + 1})"}
+            return {"message": f"Retried docking for {uniprot_id} + {ligand} (retry {retry_count + 1})"}
+        elif error_type == "inference_error":
+            if "CUDA out of memory" in payload.get("traceback", "") and retry_count < MAX_RETRIES:
+                try:
+                    await httpx.AsyncClient().post(
+                        "https://diffdock.toxindex.com/start_docking_uniprot",
+                        json = {
+                            "uniprot_id": uniprot_id,
+                            "ligand": ligand,
+                            "callback_url": callback_url,
+                            "retry_count": retry_count + 1,
+                            "batch_size": 1
+                        }
+                    )
+                except Exception as e:
+                    print(f"Retry submission failed: {e}")
+
+                return {"message": f"CUDA out of memory error for {uniprot_id} + {ligand}. Retrying with batch_size = 1."}
 
     else:
         # Create a unique filename based on UniProt and ligand (you can modify this)
