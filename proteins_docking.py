@@ -37,7 +37,7 @@ def submit_jobs(callback_url, proteins, ligands):
                 response.raise_for_status()
                 print(f"Submitted {uniprot_id} + {ligand}...")
                 
-                time.sleep(2)  # Rate limiting
+                time.sleep(0.5)  # Rate limiting
             except Exception as e:
                 print(f"Failed to submit {uniprot_id} + {ligand}...: {e}")
 
