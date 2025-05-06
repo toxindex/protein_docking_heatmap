@@ -41,6 +41,9 @@ async def receive_docking_result(request: Request):
             )
         except Exception as e:
             print(f"Retry submission failed: {e}")
+
+        return {"message": f"Retried docking for {uniprot_id} + {ligand} (retry {retry_count + 1})"}
+
     else:
         # Create a unique filename based on UniProt and ligand (you can modify this)
         filename = make_valid_fname(uniprot_id, ligand)
@@ -49,5 +52,4 @@ async def receive_docking_result(request: Request):
         with open(filepath, "w") as f:
             json.dump(payload, f, indent = 2)
 
-
-    return {"message": f"Result saved to {filepath}"}
+        return {"message": f"Result saved to {filepath}"}
