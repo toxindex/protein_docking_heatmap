@@ -1,3 +1,6 @@
+import os
+import json
+import numpy as np
 import pandas as pd
 import hashlib
 
@@ -219,3 +222,35 @@ def get_autism_ligands():
     # ligands = pd.DataFrame(data)
     ligands = pd.read_pickle("./scogs_with_smiles.pkl")
     return ligands
+
+def get_proteins_ligands(protein_set):
+    if protein_set == "thyroid":
+        proteins = get_thyroid_proteins()
+        ligands = get_thyroid_ligands()
+    elif protein_set == "autism":
+        proteins = get_autism_proteins()
+        ligands = get_autism_ligands()
+    else:
+        raise ValueError("Invalid protein set. Choose 'thyroid' or 'autism'.")
+
+    return proteins, ligands
+
+def get_docking_score(proteins, ligands, OUTPUT_DIR):
+    n_protein = len(proteins)
+    n_ligand  = len(ligands)
+    score_size = (n_ligand, n_protein)
+
+    docking_score = np.full(score_size, np.nan)
+    for i, ligand_row in ligands.iterrows():
+        ligand = ligand_row["SMILES"]
+        for j, protein_row in proteins.iterrows():
+            uniprot_id = protein_row["uniprot_id"]
+            fname = make_valid_fname(uniprot_id, ligand)
+            fpath = os.path.join(OUTPUT_DIR, fname)
+
+            if os.path.exists(fpath):
+                with open(fpath) as f:
+                    data = json.load(f)
+                    docking_score[i, j] = data["result"]["docking_score"]
+
+    return docking_score

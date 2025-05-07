@@ -8,26 +8,6 @@ import pandas as pd
 import textwrap
 import protein_ligand_data
 
-def get_docking_score(proteins, ligands, OUTPUT_DIR):
-    n_protein = len(proteins)
-    n_ligand  = len(ligands)
-    score_size = (n_ligand, n_protein)
-
-    docking_score = np.full(score_size, np.nan)
-    for i, ligand_row in ligands.iterrows():
-        ligand = ligand_row["SMILES"]
-        for j, protein_row in proteins.iterrows():
-            uniprot_id = protein_row["uniprot_id"]
-            fname = protein_ligand_data.make_valid_fname(uniprot_id, ligand)
-            fpath = os.path.join(OUTPUT_DIR, fname)
-
-            if os.path.exists(fpath):
-                with open(fpath) as f:
-                    data = json.load(f)
-                    docking_score[i, j] = data["result"]["docking_score"]
-
-    return docking_score
-
 # def display_heatmap(docking_score, proteins, ligands, protein_set, mask):
 #     n_ligand, n_protein = docking_score.shape
 #     # generate heatmap
@@ -181,7 +161,7 @@ def display_heatmap(docking_score, proteins, ligands, protein_set, mask):
 
 def main(proteins, ligands, OUTPUT_DIR, protein_set, use_exp = False):
     # collect data
-    docking_score = get_docking_score(proteins, ligands, OUTPUT_DIR)
+    docking_score = protein_ligand_data.get_docking_score(proteins, ligands, OUTPUT_DIR)
 
     '''
     # remove rows and columns with more than threshold NaN values
@@ -250,13 +230,6 @@ if __name__ == "__main__":
 
     protein_set = args.protein_set
     
-    if protein_set == "thyroid":
-        proteins = protein_ligand_data.get_thyroid_proteins()
-        ligands  = protein_ligand_data.get_thyroid_ligands()
-    elif protein_set == "autism":
-        proteins = protein_ligand_data.get_autism_proteins()
-        ligands  = protein_ligand_data.get_autism_ligands()
-    else:
-        raise ValueError("Invalid protein set selection.")
+    proteins, ligands = protein_ligand_data.get_proteins_ligands(protein_set)
     
     main(proteins, ligands, args.output_dir, protein_set, args.use_exp)
