@@ -62,13 +62,6 @@ if __name__ == "__main__":
     callback_url = args.webhook
     protein_set = args.protein_set
     
-    if protein_set == "thyroid":
-        proteins = protein_ligand_data.get_thyroid_proteins()
-        ligands  = protein_ligand_data.get_thyroid_ligands()
-    elif protein_set == "autism":
-        proteins = protein_ligand_data.get_autism_proteins()
-        ligands  = protein_ligand_data.get_autism_ligands()
-    else:
-        raise ValueError("Invalid protein set selection.")
+    proteins, ligands = protein_ligand_data.get_proteins_ligands(protein_set)
         
     submit_jobs(callback_url, proteins, ligands)
