@@ -1,53 +1,141 @@
-import os
 import argparse
-import json
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
+from matplotlib import cm
+from matplotlib.colors import Normalize
 import pandas as pd
 import protein_ligand_data
+import textwrap
 
-def main(proteins, ligands, OUTPUT_DIR, protein_set, use_exp = False):
-    # collect data
-    docking_score = protein_ligand_data.get_docking_score(proteins, ligands, OUTPUT_DIR)
+def plot_ligand_table(best_ligands, docking_scores, protein_names):
+    n_rows, n_cols = best_ligands.shape
+    fig_width = 1.5 * n_cols
+    fig_height = 2 * n_rows
+    fig, ax = plt.subplots(figsize=(fig_width, fig_height))
 
-    '''
-    # remove rows and columns with more than threshold NaN values
-    nan_threshold = 0.5
-    print(f"Initial shape: {docking_score.shape}")
-    # print mean number of NaN values in each column
-    print(f"Mean number of NaN values in each column: {np.isnan(docking_score).mean(axis = 0)}")
-    # docking_score = np.nan_to_num(docking_score, nan = -3.0)
-    col_mask = np.isnan(docking_score).mean(axis = 0) > nan_threshold  # get NaN columns as boolean mask
-    docking_score = docking_score[:, ~col_mask]
-    row_mask = np.isnan(docking_score).mean(axis = 1) > nan_threshold  # get NaN rows as boolean mask
-    docking_score = docking_score[~row_mask, :]
-    print(f"Shape after removing NaN rows and columns: {docking_score.shape}")
-    '''
-    mask = np.isnan(docking_score)
+    # Set color limits: floor at 0 if all scores are positive
+    vmin = 0 if np.all(docking_scores >= 0) else None
+    im = ax.imshow(docking_scores, cmap="viridis", aspect="auto", vmin=vmin)
+
+    # Estimate character width for wrapping: adjust divisor to tune wrapping tightness
+    est_chars_per_cell = int((fig_width * 10) / n_cols)
+
+    wrapper = textwrap.TextWrapper(
+        width=est_chars_per_cell,
+        break_long_words=True,
+        break_on_hyphens=True
+    )
+
+    norm = Normalize(vmin=np.nanmin(docking_scores), vmax=np.nanmax(docking_scores))
+    cmap = cm.get_cmap("viridis")
+
+    # Add wrapped ligand names with adaptive text color
+    for i in range(n_rows):
+        for j in range(n_cols):
+            name = best_ligands[i, j]
+            wrapped_name = wrapper.fill(name)
+            score = docking_scores[i, j]
+
+            rgba = cmap(norm(score))
+            r, g, b = rgba[:3]
+            luminance = 0.299 * r + 0.587 * g + 0.114 * b
+            text_color = "black" if luminance > 0.5 else "white"
+
+            ax.text(j, i, wrapped_name, ha="center", va="center", color=text_color, fontsize=8)
     
-    if use_exp:
-        # convert to e^x scale
-        docking_score = np.exp(docking_score)
-        # replace any nan values with 0
-        docking_score = np.nan_to_num(docking_score, nan = 0.0)
-    else:
-        # # replace any NaN values with -3 (TODO: more robust way to handle this)
-        # docking_score = np.nan_to_num(docking_score, nan = -3.0)
+    # Set axis ticks and labels
+    ax.set_xticks(np.arange(n_cols))
+    ax.set_xticklabels(protein_names, rotation=45, ha="right", fontsize=9)
+    ax.set_yticks(np.arange(n_rows))
+    ax.set_yticklabels([f"{i+1}" for i in range(n_rows)], fontsize=9)
 
-        # docking_score = np.where(mask, np.nanmean(docking_score, axis = 1, keepdims = True), docking_score)
-        # docking_score = np.nan_to_num(docking_score, nan = 0.0)
-        col_mean = np.nanmean(docking_score, axis = 0)
-        inds = np.where(mask)
-        docking_score[inds] = np.take(col_mean, inds[1])
-        # any remaining NaN values should be replaced with 0
-        docking_score = np.nan_to_num(docking_score, nan = 0.0)
+    # Add colorbar
+    cbar = plt.colorbar(im, ax=ax)
+    cbar.set_label("Docking Score")
 
-    # # Remove rows or columns with any non-finite values
-    # finite_rows = np.all(mask, axis=1)
-    # finite_cols = np.all(mask, axis=0)
-    # docking_score = docking_score[finite_rows][:, finite_cols]
-    print(f"Any nan values: {np.isnan(docking_score).any()}")
+    # Formatting
+    ax.tick_params(top=False, bottom=True, labeltop=False, labelbottom=True)
+    ax.set_xlabel("Protein", fontsize=10)
+    ax.set_ylabel("Ranked Ligands", fontsize=10)
+
+    plt.tight_layout()
+    plt.show()
+
+
+
+# def main(proteins, ligands, OUTPUT_DIR, top_n_pairs):
+#     # collect data
+#     docking_score = protein_ligand_data.get_docking_score(proteins, ligands, OUTPUT_DIR)
+#     # replace NaN with -infinity
+#     docking_score = np.nan_to_num(docking_score, nan = -np.inf)
+#     # get the n greatest scores per protein 
+#     best_score_inds = np.flipud(np.argsort(docking_score, axis = 0))[:top_n_pairs]
+#     cols = np.arange(docking_score.shape[1])
+#     print(docking_score[best_score_inds, cols])
+
+#     # give the names of the top scoring ligands per protein
+#     best_ligands = [
+#         list(ligands.iloc[best_score_inds[:, i]]["name"].values)
+#         for i in range(docking_score.shape[1])
+#     ]
+#     best_ligands = np.array(best_ligands).T
+
+#     print(best_ligands)
+
+# def main(proteins, ligands, OUTPUT_DIR, top_n_pairs):
+#     docking_score = protein_ligand_data.get_docking_score(proteins, ligands, OUTPUT_DIR)
+#     docking_score = np.nan_to_num(docking_score, nan = -np.inf)
+
+#     best_score_inds = np.flipud(np.argsort(docking_score, axis = 0))[:top_n_pairs]
+
+#     best_scores = np.array([
+#         docking_score[best_score_inds[:, i], i]
+#         for i in range(docking_score.shape[1])
+#     ]).T
+
+#     best_ligands = np.array([
+#         ligands.iloc[best_score_inds[:, i]]["name"].values
+#         for i in range(docking_score.shape[1])
+#     ]).T
+
+#     protein_names = proteins["name"].values  # Assuming proteins is a DataFrame
+
+#     # if all of the scores are -inf for a column, remove that column
+
+#     plot_ligand_table(best_ligands, best_scores, protein_names)
+
+def main(proteins, ligands, OUTPUT_DIR, top_n_pairs):
+    docking_score = protein_ligand_data.get_docking_score(proteins, ligands, OUTPUT_DIR)
+    docking_score = np.nan_to_num(docking_score, nan=-np.inf)
+
+    # Get the n greatest scores per protein
+    best_score_inds = np.flipud(np.argsort(docking_score, axis=0))[:top_n_pairs]
+
+    best_scores = np.array([
+        docking_score[best_score_inds[:, i], i]
+        for i in range(docking_score.shape[1])
+    ]).T
+
+    best_ligands = np.array([
+        ligands.iloc[best_score_inds[:, i]]["name"].values
+        for i in range(docking_score.shape[1])
+    ]).T
+
+    protein_names = proteins["name"].values  # Assuming proteins is a DataFrame
+
+    # Identify columns where all scores are -inf
+    valid_columns = ~np.all(best_scores == -np.inf, axis=0)
+
+    # Filter out invalid columns
+    best_score_inds = best_score_inds[:, valid_columns]
+    best_scores = best_scores[:, valid_columns]
+    best_ligands = best_ligands[:, valid_columns]
+    protein_names = protein_names[valid_columns]
+
+    # Plot the ligand table
+    plot_ligand_table(best_ligands, best_scores, protein_names)
+
+    
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
@@ -60,6 +148,12 @@ if __name__ == "__main__":
         help = "Choose which set of proteins to use: 'thyroid' or 'autism'."
     )
     parser.add_argument(
+        "--top_n_pairs",
+        type = int,
+        default = 4,
+        help = "Display the top n ligands for each protein."
+    )
+    parser.add_argument(
         "--output_dir",
         default = "./docking_results",
         help = "Directory containing docking results."
@@ -70,4 +164,4 @@ if __name__ == "__main__":
     protein_set = args.protein_set
     proteins, ligands = protein_ligand_data.get_proteins_ligands(protein_set)
     
-    main(proteins, ligands, args.output_dir, protein_set, args.use_exp)
+    main(proteins, ligands, args.output_dir, args.top_n_pairs)
