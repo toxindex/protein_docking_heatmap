@@ -52,9 +52,9 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--protein_set",
-        choices = ["thyroid", "autism"],
+        choices = ["thyroid", "autism", "cancer"],
         required = True,
-        help = "Choose which set of proteins to use: 'thyroid' or 'autism'."
+        help = "Choose which set of proteins to use: 'thyroid', 'autism', or 'cancer'."
     )
 
     args = parser.parse_args()
