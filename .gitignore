@@ -32,3 +32,6 @@ node_modules/
 docking_results/
 
 start_all.sh
+
+# Backup files
+*.bak.*
