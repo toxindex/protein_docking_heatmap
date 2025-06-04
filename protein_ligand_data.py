@@ -385,6 +385,13 @@ def get_cancer_proteins():
             "P04626",
             "P22607",
             "P01112",
+            "P01116",
+            "P01111",
+            "O75874",
+            "O60674",
+            "P10721",
+            "P08581",
+            "P01106",
             "P04198",
             "P12524",
             "P46531",
@@ -401,13 +408,13 @@ def get_cancer_proteins():
             "P04629",
             "Q15910",
             "P31269",
+            "N/A",
             "P04637",
             "P06400",
             "P25054",
             "P38398",
             "P51587",
             "P42771",
-            "P60484",
             "P60484",
             "P40337",
             "Q15831",
@@ -444,7 +451,7 @@ def get_cancer_proteins():
     proteins = pd.DataFrame(data)
 
     # remove entries not in database
-    uniprot_to_remove = ["P04198", "P12524", "P27797", "P31269", "Q15831", "Q92574", "P49815", "O14497", "Q92560", "Q969H0", "Q13315", "Q13535", "Q8IXJ9"]
+    uniprot_to_remove = ["N/A", "P04198", "P12524", "P27797", "P31269", "Q15831", "Q92574", "P49815", "O14497", "Q92560", "Q969H0", "Q13315", "Q13535", "Q8IXJ9"]
     proteins = proteins[~proteins["uniprot_id"].isin(uniprot_to_remove)]
     proteins.reset_index(drop=True, inplace=True)  # Reset indices
 
