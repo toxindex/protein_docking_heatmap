@@ -652,7 +652,7 @@ def get_proteins_ligands(protein_set):
         proteins = get_cancer_proteins2()
         ligands = get_cancer_ligands()
     elif protein_set == "cancer_old":
-        proteins = get_cancer_proteins2()
+        proteins = get_cancer_proteins()
         ligands = get_cancer_ligands()
     else:
         raise ValueError("Invalid protein set. Choose from ['thyroid', 'autism', 'cancer', 'cancer_old'].")
